@@ -5,4 +5,4 @@ import { API_BASE_URL } from "./ApiConfig"
 const REST_API_BASE_URL = `${API_BASE_URL}/search_all_leagues.php?s=`
 
 /** GET {League} - lists desired league info */
-export const findPlayer = (leagueName) => axios.get(`${REST_API_BASE_URL}${encodeURIComponent(leagueName)}`)
+export const findPlayer = () => axios.get(`${REST_API_BASE_URL}${encodeURIComponent("all_leagues.php")}`)
